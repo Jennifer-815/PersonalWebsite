@@ -1,62 +1,26 @@
-.container{
+.row {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    height:500px;
 }
 
-.Left{
-flex:25%;
-background-color: blueviolet;
-display: flex;
-flex-direction: column;
-}
-.Header{
-    flex:0.1;
-}
-.Content{
-    flex:1;
-}
-.Footer{
-    flex:0.1;
+.col-3 {
+    flex: 0 0 25%;
 }
 
-.Right{
-    background-color: brown;
-flex:75%;
-display: flex;
-flex-direction: column;
-}
-.AboutMe{
-flex:1;
+.col-9 {
+    flex: 0 0 75%;
 }
 
-.Services{
-flex:1;
+.col-12 {
+    flex: 0 0 100%;
 }
 
-.WorkExperience{
-flex:3;
-}
-.Testimonials{
-flex:1;
-}
 
-.Skills{
-   flex:2;
-}
-.Portfolio{
-    flex:0.2;
-}
-.All{
-    flex:0.2;
-}
-.Pro{
-    flex:2;
-}
-.Blog{
-    flex:0.1;
-}
-.test{
-    flex:2;
+@media screen and (max-width: 768px) {
+
+    .col-3,
+    .col-9 {
+        flex: 0 0 100%;
+    }
+
 }
